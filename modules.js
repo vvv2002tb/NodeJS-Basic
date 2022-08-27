@@ -1,0 +1,3 @@
+let dem = function (arrmang) {
+    
+}
