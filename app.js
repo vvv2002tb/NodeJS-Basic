@@ -1,5 +1,5 @@
-console.log("Basic NodeJs");
-
+const dem = require('./modules')
+const pattern = require('./pattern')
 // setTimeout(function() {
 //     console.log("Server started after three seconds");
 // }, 3000);
@@ -46,3 +46,8 @@ const sayHello = function() {
 
 
 callFunction(); // nếu để callFunction trên đầu thì error, sau sayHello thì oke
+
+console.log(dem(['a' , 'b' , 'c' , 'd' , 'e' , 'f']));
+
+console.log(pattern.sum(4, 6));
+console.log(pattern.message());
