@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      
+      <h1>xin chao <%= id %></h1>
+      <p>name: <%= information.name %></p>
+      <p>email: <%= information.email %></p>
+      <h2>Hobbies : </h2>
+      <ul>
+        <% information.hobbies.forEach(function(item) { %>
+        <li><%= item %></li>
+        <% }); %>
+      </ul>
+    </div>
+  </body>
+</html>
